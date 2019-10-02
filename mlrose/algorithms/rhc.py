@@ -81,6 +81,7 @@ def random_hill_climb(problem, max_attempts=10, max_iters=np.inf, restarts=0,
         fitness_curve = []
         best_fitness_curve = []
 
+    iters = 0
     continue_iterating = True
     for current_restart in range(restarts + 1):
         # Initialize optimization problem and attempts counter
@@ -90,7 +91,7 @@ def random_hill_climb(problem, max_attempts=10, max_iters=np.inf, restarts=0,
             problem.set_state(init_state)
 
         attempts = 0
-        iters = 0
+
 
         while (attempts < max_attempts) and (iters < max_iters):
             iters += 1

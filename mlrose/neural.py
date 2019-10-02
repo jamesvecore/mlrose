@@ -200,7 +200,7 @@ class NetworkWeights:
         Whether a bias term is included in the network.
 
     is_classifer: bool, default: True
-        Whether the network is for classification orregression. Set True for
+        Whether the network is for classification or regression. Set True for
         classification and False for regression.
     """
 
